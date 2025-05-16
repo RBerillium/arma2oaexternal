@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{05ed03cf-af74-47ed-b7dd-04391b22144f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="keyauth">
+      <UniqueIdentifier>{5c567af8-c932-4f7f-abbb-cb50c0c9e411}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="render\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="render\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="render\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="render\imgui\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="render\imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="render\imgui\imgui_stdlib.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="render\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="render\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="vector3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="render\font.h" />
+    <ClInclude Include="render\hijack.h" />
+    <ClInclude Include="render\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render\imgui\imgui_impl_dx11.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render\imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render\imgui\imgui_stdlib.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render\imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render\imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render\imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\kernel.h" />
+    <ClInclude Include="sdk.h" />
+    <ClInclude Include="vector3.h" />
+    <ClInclude Include="render\xor.h" />
+    <ClInclude Include="vector2.hpp" />
+    <ClInclude Include="keyauth\auth.hpp">
+      <Filter>keyauth</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="keyauth\libcurl.lib">
+      <Filter>keyauth</Filter>
+    </Library>
+    <Library Include="keyauth\library_x64.lib">
+      <Filter>keyauth</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

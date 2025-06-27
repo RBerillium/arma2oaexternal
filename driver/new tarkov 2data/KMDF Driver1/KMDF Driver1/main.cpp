@@ -127,7 +127,7 @@ NTSTATUS hook_function(__int64 a1)
 	auto packet = reinterpret_cast<packet_struct*>(a1);
 	if (!packet)
 	{
-		return oSleepstudyHelperBlockerActiveReference(a1);
+		return original_win32k(a1);
 	}
 	if (packet->magic == magic_value)
 	{	
@@ -154,7 +154,8 @@ NTSTATUS hook_function(__int64 a1)
 		{
 			void* address = NULL;
 			PEPROCESS process = game_process;
-			address = ProcessModuleKernel(game_pid, process, (const wchar_t*)packet->data.module.module_name);
+			//address = ProcessModuleKernel(game_pid, process, (const wchar_t*)packet->data.module.module_name);
+			address = PsGetProcessSectionBaseAddress(game_process);
 			packet->data.module.module_address = reinterpret_cast<uint64_t>(address);
 
 		}
@@ -195,7 +196,7 @@ NTSTATUS hook_function(__int64 a1)
 		}
 	}
 	else
-		return oSleepstudyHelperBlockerActiveReference(a1);
+		return original_win32k(a1);
 
 	return STATUS_SUCCESS;
 }
@@ -270,16 +271,16 @@ NTSTATUS hook_setup(uint64_t win32_offset)
 
 }
 //uint64_t win32_offset,uint64_t offset_fastfat2
-NTSTATUS driver_entry() //uint64_t win32_offset, uint64_t offset_fastfat ..uint64_t win32k_offset, uint64_t fastfat_offset
+NTSTATUS driver_entry(uint64_t win32_offset, uint64_t junk_offset_for_driver_entry, uint64_t another_junk_offset) //uint64_t win32_offset, uint64_t offset_fastfat ..uint64_t win32k_offset, uint64_t fastfat_offset
 {
-	uint64_t win32k_offset = 0xAB3C;// 0xAB3C - win11 //Windows10 0x90B0;
+	//uint64_t win32k_offset = 0xAB3C;// 0xAB3C - win11 //Windows10 0x90B0;
 	//uint64_t fastfat_offset = 0x3A50;
 	//EfsSetEfsInfoCallback
 
-	
+	//uint64_t win32_offset = 0x908C;
 	init_import();
 	
-	hook_setup(win32k_offset);
+	hook_setup(win32_offset);
 
 	return STATUS_SUCCESS;
 }

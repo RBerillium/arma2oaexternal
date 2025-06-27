@@ -8,7 +8,8 @@
 #include "sdk.h"
 #include "render/xor.h"
 #include "vector2.hpp"
-#include "keyauth/auth.hpp"
+#include "auth/auth.hpp"
+#include "auth/utils.hpp"
 #include "menu.h"
 
 #include <intrin.h>
@@ -16,16 +17,7 @@ std::string soldier = xor("soldier");
 
 
 
-using namespace KeyAuth;
 
-bool escape = false;
-std::string name = xor("arma2 dayz mod"); std::string ownerid = xor("PtaI3ObI83");
-std::string secret = xor ("beef9a74c35e9a54ae1e4989aecd09243b66561e8422bf2ed96aea302e5655b4");
-std::string version = xor ("1.0");
-std::string url = xor ("https://keyauth.win/api/1.2/");
-std::string path = xor ("");
-api key_auth_app(name, ownerid, secret, version, url, path);
-std::string key = xor ("");
 
 
 namespace s = settings;
@@ -394,29 +386,37 @@ void cache_all()
 }
 int main(int argc, char* argv[])
 {
+#ifndef OFFLINE_MODE
+	//if (!lib.init(application_name, api_public_key, link))
+	//{
+	//	exit(-55);
+	//}
+	//if (argc < 2)
+	//{
+	//	exit(0xdeadbeef);
+	//}
+	//else
+	//{
+	//	key = argv[1];
+	//}
 
-	printf(xor ("enter key :"));
-	std::cin >> key;
-	key_auth_app.init();
-	if (!key_auth_app.response.success)
-	{
+	//lib.auth(key, responce);
 
-		Sleep(1000); exit(-5);
+	//if (!responce.valid)
+	//{	
+	//	Sleep(1500);
+	//	exit(0xdeadbeef);
+	//}
 
-	}
-	key_auth_app.license(key);
-	if (!key_auth_app.response.success)
-	{
-
-		Sleep(1500); exit(-5);
-	}
+#endif
 	LoadLibraryA(xor("user32.dll")); HMODULE module_win32u = LoadLibraryA(xor("win32u.dll"));
 
 	if (module_win32u)
 	{
-		*(PVOID*)&memory_system::function = GetProcAddress(module_win32u, xor("NtUserDestroyPalmRejectionDelayZone")); // for um
+		*(PVOID*)&memory_system::function = GetProcAddress(module_win32u, xor("NtUserDestroyPalmRejectionDelayZone")); // for um 
 		//*(PVOID*)&memory_system::function = GetProcAddress(module_win32u, _("NtUserMagControl"));
 	}
+	printf(_("comm addr is %llx\n"), &memory_system::function);
 	settings::screen_x = GetSystemMetrics(SM_CXSCREEN); settings::screen_y = GetSystemMetrics(SM_CYSCREEN);
 	//uint32_t pID = 10112;
 	//uintptr_t pBase = 0xee0000;
@@ -430,6 +430,7 @@ int main(int argc, char* argv[])
 	// Sleep(5000);
 	Driver::initialization(process_identifier);
 	base_address = Driver::get_module(xor(L"ArmA2OA.exe"));
+	//printf(_("addr base is %llx\n"), base_address);
 
 	bool initialized = false;
 	printf(xor("press F5 after in-game initialization"));
@@ -444,7 +445,7 @@ int main(int argc, char* argv[])
 	}
 	Nvidia::initialization();
 	printf(xor("init success!\n"));
-	RECT Desktop; HWND hDesktop = GetDesktopWindow();
+	RECT Desktop; HWND hDesktop = Nvidia::window;
 	GetWindowRect(hDesktop, &Desktop); uint32_t x = Desktop.right; uint32_t y = Desktop.bottom;
 	globals::screen_x = x;
 	globals::screen_y = y;

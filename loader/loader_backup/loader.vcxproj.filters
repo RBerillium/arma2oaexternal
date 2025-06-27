@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="dllmapper\injector.cpp">
+      <Filter>dllmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\core.cpp">
+      <Filter>kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\executable.cpp">
+      <Filter>kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\mapper.cpp">
+      <Filter>kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\utilities.cpp">
+      <Filter>kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\Pdb.cpp">
+      <Filter>kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\SymLoader.cpp">
+      <Filter>kdmapper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="console.hpp" />
+    <ClInclude Include="dllmapper\injector.hpp">
+      <Filter>dllmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="mappers.hpp" />
+    <ClInclude Include="xor.hpp" />
+    <ClInclude Include="kdmapper\core.hpp">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\executable.hpp">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\global.hpp">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\mapper.hpp">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\rtcore64.hpp">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\utilities.hpp">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="init_data.hpp" />
+    <ClInclude Include="garbage_files.hpp" />
+    <ClInclude Include="array_reader.hpp" />
+    <ClInclude Include="kdmapper\Pdb.h">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\Pe.hpp">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\SymLoader.h">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="pdb_parser.hpp">
+      <Filter>kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="json_loader.hpp" />
+    <ClInclude Include="auth\auth.hpp">
+      <Filter>auth</Filter>
+    </ClInclude>
+    <ClInclude Include="auth\utils.hpp">
+      <Filter>auth</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dllmapper">
+      <UniqueIdentifier>{b7bc4f20-f48c-4ce1-9438-fdfe7b6f2eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kdmapper">
+      <UniqueIdentifier>{e7389574-1791-4bec-bfbf-8366ff944d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="auth">
+      <UniqueIdentifier>{ebcb738e-0c63-4c28-9e0e-725b2cdea251}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

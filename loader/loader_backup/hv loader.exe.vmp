@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Document Version="2">
+    <Protection InputFileName="hv loader.exe" Options="499656" VMCodeSectionName=".be0" VMComplexity="20">
+        <Messages />
+        <Folders />
+        <Procedures>
+            <Procedure MapAddress="authlib::authlib(void)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="authlib::~authlib(void)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="authlib::is_authorized(void)" IncludedInCompilation="0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="authlib::download_file(int,class std::basic_string&lt;char,struct std::char_traits&lt;char&gt;,class std::allocator&lt;char&gt; &gt; const &amp;)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="authlib::init(class std::basic_string&lt;char,struct std::char_traits&lt;char&gt;,class std::allocator&lt;char&gt; &gt;,class std::basic_string&lt;char,struct std::char_traits&lt;char&gt;,class std::allocator&lt;char&gt; &gt;,class std::basic_string&lt;char,struct std::char_traits&lt;char&gt;,class std::allocator&lt;char&gt; &gt;)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="authlib::create_ca_cert(void)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="authlib::get_hwid_hash(void)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="authlib::ban_key(class std::basic_string&lt;char,struct std::char_traits&lt;char&gt;,class std::allocator&lt;char&gt; &gt; const &amp;)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="authlib::auth(class std::basic_string&lt;char,struct std::char_traits&lt;char&gt;,class std::allocator&lt;char&gt; &gt; const &amp;,struct response_t &amp;)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`2&apos;::&lt;lambda_10&gt;::&lt;lambda_invoker_cdecl&gt;" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::ban_key&apos;::`2&apos;::&lt;lambda_7&gt;::&lt;lambda_invoker_cdecl&gt;" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::authlib&apos;::`1&apos;::dtor$0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::authlib&apos;::`1&apos;::dtor$1" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::authlib&apos;::`1&apos;::dtor$2" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::authlib&apos;::`1&apos;::dtor$3" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::authlib&apos;::`1&apos;::dtor$4" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$22" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$1" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$27" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$2" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$3" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$32" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$4" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$5" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$6" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$7" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$8" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$9" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$10" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$12" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$13" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$14" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$15" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$69" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$73" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$66" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$78" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::dtor$82" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::auth&apos;::`1&apos;::catch$120" IncludedInCompilation="0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::ban_key&apos;::`1&apos;::dtor$0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::ban_key&apos;::`1&apos;::dtor$8" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::ban_key&apos;::`1&apos;::dtor$1" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::ban_key&apos;::`1&apos;::dtor$2" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::ban_key&apos;::`1&apos;::dtor$3" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::ban_key&apos;::`1&apos;::dtor$4" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::ban_key&apos;::`1&apos;::dtor$5" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::ban_key&apos;::`1&apos;::dtor$6" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::create_ca_cert&apos;::`1&apos;::dtor$0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::create_ca_cert&apos;::`1&apos;::dtor$2" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$1" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$12" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$2" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$17" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$3" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$4" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$22" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$5" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$6" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$7" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$8" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::download_file&apos;::`1&apos;::dtor$9" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$1" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$2" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$3" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$4" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$5" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$6" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$7" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$8" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::get_hwid_hash&apos;::`1&apos;::dtor$13" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::init&apos;::`1&apos;::dtor$0" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::init&apos;::`1&apos;::dtor$1" Options="0" CompilationType="2" />
+            <Procedure MapAddress="`authlib::init&apos;::`1&apos;::dtor$2" Options="0" CompilationType="2" />
+            <Procedure MapAddress="main" Options="0" CompilationType="2" />
+        </Procedures>
+        <Objects />
+    </Protection>
+    <Script />
+</Document>

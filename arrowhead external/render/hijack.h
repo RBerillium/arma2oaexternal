@@ -71,43 +71,29 @@ namespace Nvidia
         while (!window)
         {
             // window = FindWindowA(_("CEF-OSC-WIDGET"), _("NVIDIA GeForce Overlay DT"));
-            window = FindWindowA(xor ("CGdiCapWindowWnd"), xor (""));
+            //window = FindWindowA(xor ("CGdiCapWindowWnd"), xor (""));
+          
+            window = FindWindowA(_("Chrome_WidgetWin_1"), _("Discord Overlay"));
             Sleep(10);
         }
 
-        Sleep(10);
-        // uint32_t process = memory_system::get_process_by_name(_("NVIDIA Share.exe"));
-         // suspend_process(process, GetCurrentThreadId());
-      //  bool success = SetWindowPos(window, HWND_TOPMOST, 0, 0, 0, 0, 0x0002 | 0x0001);
+        //Sleep(10);
 
-        //MoveWindow(window, 0, 0, screen_x, screen_y, TRUE);
-       // ShowWindow(window, SW_MAXIMIZE); UpdateWindow(window);
+        //auto info = GetWindowLongA(window, -20);
 
-        auto info = GetWindowLongA(window, -20);
+        //if (!info)
+        //    return false;
 
-        if (!info)
-            return false;
+        //MARGINS margin;
+        //margin.cyBottomHeight = margin.cyTopHeight = margin.cxLeftWidth = margin.cxRightWidth = -1;
 
-        //auto attrchange = SetWindowLongPtrA(window, -20, (LONG_PTR)(info | 0x20));
+        //if (DwmExtendFrameIntoClientArea(window, &margin) != S_OK)
+        //    return false;
 
-       // if (!attrchange)
-            //return false;
-
-        MARGINS margin;
-        margin.cyBottomHeight = margin.cyTopHeight = margin.cxLeftWidth = margin.cxRightWidth = -1;
-
-        if (DwmExtendFrameIntoClientArea(window, &margin) != S_OK)
-            return false;
-
-        if (!SetLayeredWindowAttributes(window, 0x000000, 0xFF, 0x02))
-            return false;
-        //SetWindowPos(window, HWND_TOPMOST, 0, 0, 0, 0, 0x0002 | 0x0001);
-
-
-        ShowWindow(window, SW_SHOW);
-
-
-
+        //if (!SetLayeredWindowAttributes(window, 0x000000, 0xFF, 0x02))
+        //    return false;
+        ////SetWindowPos(window, HWND_TOPMOST, 0, 0, 0, 0, 0x0002 | 0x0001);
+        //ShowWindow(window, SW_SHOW);
 
         DXGI_SWAP_CHAIN_DESC swap_chain_desc;
         swap_chain_desc.BufferCount = 2;

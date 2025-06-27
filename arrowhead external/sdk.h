@@ -529,18 +529,7 @@ void cache_entities_test()
 
 		int string_size = Driver::read<int>(object_name_ptr + 0x4);
 		char* string = ReadString(object_name_ptr + 0x8, string_size);
-		//int_ptr model_name = Driver::read<int_ptr>(entity_cfg + 0x38); // 0x38- model name
 
-		//int model_string_size = Driver::read<int>(model_name + 0x4);
-		//std::string model_name_string = std::string(ReadString(model_name +0x8, model_string_size));
-
-
-
-
-
-
-		
-	
 		if (!strcmp(string, xor ("soldier"))) {
 		
 			//if (is_dead(entity))

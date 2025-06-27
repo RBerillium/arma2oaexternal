@@ -18,6 +18,8 @@ extern "C"
 		_In_      ULONG            ProcessInformationLength,
 		_Out_opt_ PULONG           ReturnLength
 	);
+
+	PVOID PsGetProcessSectionBaseAddress(PEPROCESS Process);
 }
 
 KLI_CACHED_DEF(tolower);

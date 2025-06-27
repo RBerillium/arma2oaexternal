@@ -4,8 +4,8 @@
     <Filter Include="imgui">
       <UniqueIdentifier>{05ed03cf-af74-47ed-b7dd-04391b22144f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="keyauth">
-      <UniqueIdentifier>{5c567af8-c932-4f7f-abbb-cb50c0c9e411}</UniqueIdentifier>
+    <Filter Include="auth">
+      <UniqueIdentifier>{36f230ae-6cf1-441b-95a3-eb6f72aa3c91}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -71,17 +71,12 @@
     <ClInclude Include="vector3.h" />
     <ClInclude Include="render\xor.h" />
     <ClInclude Include="vector2.hpp" />
-    <ClInclude Include="keyauth\auth.hpp">
-      <Filter>keyauth</Filter>
-    </ClInclude>
     <ClInclude Include="menu.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="keyauth\libcurl.lib">
-      <Filter>keyauth</Filter>
-    </Library>
-    <Library Include="keyauth\library_x64.lib">
-      <Filter>keyauth</Filter>
-    </Library>
+    <ClInclude Include="auth\auth.hpp">
+      <Filter>auth</Filter>
+    </ClInclude>
+    <ClInclude Include="auth\utils.hpp">
+      <Filter>auth</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
